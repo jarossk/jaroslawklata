@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" ng-app="myUI">
+
+<head>
+  <base href="/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <title>Jarosla Klata</title>
+    
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="vendor/bootstrap-social.css">
+  
+</head>
+
+<body>
+  
+  <!--<div id="loading"></div> -->
+  <div id="fb-root"></div>
+  <!-- navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="/">Portfolio</a>
+      </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="../navbar/">
+              <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+            </a>
+          </li>
+          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div> <!--/.nav-collapse -->
+    </div> 
+  </nav>
+
+  <div class="container">
+    <div class="col-md-12">
+      <div class="space"></div>
+    </div>
+
+    <div class="container"></div>
+
+    <div class="container con1">
+     <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1">
+          <div id="jk-title">
+           <h1>Jaroslaw Klata</h1>
+           <h2 class="jt">FRONT END DEVELOPER</h2>
+           <hr>
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+        </div>
+      </div>
+     </div>
+
+      <div class="row">
+        <div id="slider" class="col-md-6 col-md-offset-3">
+          <div ng-view></div>
+        </div>     
+      </div>
+
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Skills</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-md-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Hobby</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-md-4">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Projects</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="" data-holder-rendered="true">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div>
+
+      <div id="article" class="row">
+        <div class="col-md-3 col-md-offset-1 fb_content2">
+         <div class="well">
+           <fb:login-button scope="public_profile,email,user_friends" onlogin="checkLoginState();"></fb:login-button>
+           <div id="status"></div>
+            <div class="like-style" style="overflow: auto;">
+             <div class="fb-like" data-href="http://testsalon-24pl.rhcloud.com/" data-layout="standard" data-action="like" data-size="large"
+                  data-show-faces="true" data-share="false">
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="row footer">
+        SAY HI
+        <div class="col-md-3 col-md-offset-1">
+          <h3>Dane kontaktowe</h3>
+            <ul>
+              <li>klata.jarek@gmail.com</li>
+              <li>klata.jarek@gmail.com</li>
+              <li>klata.jarek@gmail.com</li>
+              <li>klata.jarek@gmail.com</li>
+            </ul>
+        </div>
+       <div class="col-md-3 col-md-offset-1">
+         <div class="sec21cv">
+           <p class="textcv">Download my CV</p>
+         </div>
+          <div ng-controller="LinkCtrl" class="sec22cv">
+              <a target="_self" ng-href="{{pdf_link}}">
+                <img id="reload" class="img_cv" src="img/cv_s1.png" alt="cvs" height="194" width="150">
+              </a>
+               <div class="sec22cv-overlay top"></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <h3>Dane kontaktowe</h3>
+          <ul>
+              <li>klata.jarek@gmail.com</li>
+              <li>klata.jarek@gmail.com</li>
+              <li>klata.jarek@gmail.com</li>
+              <li>klata.jarek@gmail.com</li>
+            </ul>
+        </div>
+         <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </div>
+
+    </div>  <!-- main container -->
+   </div>
+
+  <script src="vendor/jquery-3.1.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-2.1.3.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/myUI.js"></script>
+  <script src="js/fb-script.js"></script>
+
+  <script type="text/javascript">
+    console.log("angular object", angular);
+  </script>
+</body>
+</html>

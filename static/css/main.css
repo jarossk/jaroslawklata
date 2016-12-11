@@ -1,0 +1,197 @@
+body {
+  font: 20px/1.5 'Ubuntu', sans-serif;
+  color: #F0E7D5;
+  background: #555 url('asphalt.png');
+  text-align: center;
+  margin: 0;
+}
+
+header, footer {
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  margin: 30px 0 0;
+}
+
+header > p {
+  margin: 2px;
+}
+
+main {
+  padding: 10px 20px;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #000;
+}
+
+footer {
+  border-top: 1px solid #666;
+}
+
+a:link, a:visited {
+  color: #78B642;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.logo {
+  width: 50%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px dashed #555;
+}
+
+/* Customize scrollbars in webkit */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #222;
+    box-shadow: 0 0 1px #000 inset;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #444;
+    box-shadow: 0 0 6px #000 inset;
+}
+
+/* Play nice with small devices */
+
+@media screen and (max-width: 300px) {
+  .fork {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    text-align: left;
+  }
+}
+
+.cd-marker {
+  background-color: currentColor;
+}
+.cd-marker::before {
+    /* triangle at the bottom of nav selected item */
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: inherit; 
+}
+ 
+/* these are the colors of the markers - line + arrow */
+.color-1 {
+  color: #9a57bd; 
+}
+ 
+.color-2 {
+  color: #c96aa4; 
+}
+
+.cd-header {
+  transition: transform 0.5s;
+}
+.cd-header.nav-is-visible {
+  transform: translateY(80px);
+}
+ 
+.cd-3d-nav-container {
+  /* this is the 3D navigation container */
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  /* enable a 3D-space for children elements */
+  perspective: 1000px;
+  transform: translateY(-100%);
+  transition: transform 0.5s 0s, visibility 0s 0.5s; 
+}
+.cd-3d-nav-container.nav-is-visible {
+  visibility: visible;
+  transform: translateY(0);
+  transition: transform 0.5s 0s, visibility 0.5s 0s; 
+}
+.cd-3d-nav {
+  /* this is the 3D rotating navigation */
+  transform-origin: center bottom;
+  transform: rotateX(90deg);
+  transition: transform 0.5s; 
+main {
+  transition: transform 0.5s;
+}
+main.nav-is-visible {
+  transform: translateY(80px); 
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}

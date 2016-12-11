@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+    <!--  <base href="/"> -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Books</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+    <!--    <link rel="stylesheet" href="css/main.css"> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+    <script src="js/booksApp.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body ng-app="booksApp">
+      
+      <div id='main' class="container">
+        <div class="col-md-offset-2 col-md-8">
+            <div ng-view></div>
+        </div>
+      </div>
+<a href="contacts">Contacts</a>
+<a href="contacts.html">Contacts1</a>
+
+  <script type="text/javascript">
+    console.log("angular object", angular);
+  </script>
+</body>
+</html>

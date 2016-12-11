@@ -1,0 +1,94 @@
+.box {
+  position: relative;
+  width: auto;
+  padding: 50px;
+  margin: 10px auto;
+  background-color: #fff;
+  -webkit-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -moz-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -ms-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -o-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2)q, inset 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box:before, .box:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	-webkit-transform: skew(-5deg) rotate(-5deg);
+	-moz-transform: skew(-5deg) rotate(-5deg);
+	-ms-transform: skew(-5deg) rotate(-5deg);
+	-o-transform: skew(-5deg) rotate(-5deg);
+	transform: skew(-5deg) rotate(-5deg);
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.box:after
+{
+	left: auto;
+	right: 12px;
+	-webkit-transform: skew(5deg) rotate(5deg);
+	-moz-transform: skew(5deg) rotate(5deg);
+	-ms-transform: skew(5deg) rotate(5deg);
+	-o-transform: skew(5deg) rotate(5deg);
+	transform: skew(5deg) rotate(5deg);
+}
+
+/* -------------------------------- 
+box2 effect 7
+-------------------------------- */
+.box2 h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+.box2 {
+	width:70%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+} 
+.effect7:after
+{
+    right:10px; 
+    left:auto; 
+    transform:skew(8deg) rotate(3deg);
+}
+
+/* -------------------------------- 
+box3 effect 7
+-------------------------------- */
+
+.box3 {
+	background: yellowgreen !important;
+	border:1px solid darkred;
+}
