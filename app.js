@@ -15,7 +15,7 @@ require('./models/models');
 var api = require('./routes/api');
 var boo = require('./routes/boo');
 
-var mongoURI = "mongodb://admin:31ziSXgTmvLF@127.10.164.2:27017/testsalon";
+var mongoURI = "mongodb://admin:31ziSXgTmvL@127.10.164.2:27017/testsalon";
 var mongoURILoc = "mongodb://127.0.0.1:27017/testsalon";
 
 var mongoose = require('mongoose');
